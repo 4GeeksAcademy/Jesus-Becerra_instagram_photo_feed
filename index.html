@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB_Instagram</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex w-100">
+                <div class="p-2 flex-grow-1 me-auto my-auto">
+                    <a class="navbar-brand my-auto">
+                        <img src="https://e7.pngegg.com/pngimages/640/645/png-clipart-instagram-icon-computer-icons-instagram-logo-area-thumbnail.png"
+                            alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                        Instagram
+                    </a>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <button type="button" class="btn btn-success mx-2 my-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body pb-0">
+                                        <form>
+                                            <div>
+                                                <label for="recipient-name" class="col-form-label">Caption:</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    placeholder="Add the caption of your post here"></textarea>
+                                            </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <button type="button" class="btn py-3">
+                                            <i class="fa-solid fa-camera"></i>
+                                        </button>
+                                        <button type="button" class="btn py-3">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-footer pt-0">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secundary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav nav-pills row rows-col mb-3 mt-5 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item col-1 ms-auto p-0" role="presentation" style="height: 100%; width: auto;">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-grilla"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
+        </li>
+        <li class="nav-item col-1 me-auto p-0" role="presentation" style="height: 100%; width: auto;">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-lista"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-grilla" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="container text-center">
+                <div class="row gx-5">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1742268350489-e5d1c0616c54?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1742137188175-d31977b9561d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1742413549129-ab984fa66ec2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1739382120673-54ec4d63dc62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1742161627294-2c46bbd9b7e1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1734682648300-08be86af722d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-square"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 p-2"> <img
+                            src="https://media.everskies.com/y3SDeEByaHBSTp_an66h.png" class="img-square"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-lista" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>The Last Night!</h5>
+                        <span class="ms-auto">2/5</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">60 Likes</span>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, veritatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>Just hanging out</h5>
+                        <span class="ms-auto">2/3</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1742268350489-e5d1c0616c54?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">35 Likes</span>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
+                            aliquam earum provident, nisi voluptatem perferendis eligendi voluptatum at repellat atque
+                            vitae, eum sapiente dicta quos..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>The Magnificence of Nature!</h5>
+                        <span class="ms-auto">1/1</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1742137188175-d31977b9561d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">103 Likes</span>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>Traveling</h5>
+                        <span class="ms-auto">1/7</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1742413549129-ab984fa66ec2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">98 Likes</span>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto qui veritatis debitis corrupti expedita! Explicabo, dolorem assumenda magni alias ut voluptatum exercitationem neque error necessitatibus? Quibusdam id expedita sequi voluptate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>Rain under the Big City</h5>
+                        <span class="ms-auto">3/5</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1739382120673-54ec4d63dc62?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">57 Likes</span>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laborum officia? Voluptate nobis assumenda molestiae, accusamus quos architecto consequuntur at, in cupiditate modi, nostrum sequi dolores dicta porro!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-2 col-sm-3 col-md-4 mx-auto my-4 card p-0" style="max-width: fit-content;">
+                    <div class="card-header bg-transparent d-flex">
+                        <h5>Just With You</h5>
+                        <span class="ms-auto">1/3</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1742161627294-2c46bbd9b7e1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top card-img-bottom img-square">
+                    <div class="card-body row">
+                        <span style="font-weight: bold;">80 Likes</span>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ad accusamus soluta facilis, ut veniam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
